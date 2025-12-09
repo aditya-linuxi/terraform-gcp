@@ -7,6 +7,7 @@ provider "google" {
 resource "google_compute_instance" "vm_instance" {
   name         = "jenkins-created-vm"
   machine_type = "e2-micro"
+}
 
   boot_disk {
     initialize_params {
